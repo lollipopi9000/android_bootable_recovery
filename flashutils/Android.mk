@@ -41,6 +41,7 @@ LOCAL_CFLAGS += -Dmain=erase_image_main
 include $(BUILD_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
+LOCAL_PACK_MODULE_RELOCATIONS := false
 LOCAL_SRC_FILES := dump_image.c
 LOCAL_MODULE := utility_dump_image
 LOCAL_MODULE_TAGS := optional
@@ -53,6 +54,8 @@ LOCAL_FORCE_STATIC_EXECUTABLE := true
 include $(BUILD_EXECUTABLE)
 
 include $(CLEAR_VARS)
+LOCAL_PACK_MODULE_RELOCATIONS := false
+LOCAL_PACK_MODULE_RELOCATIONS := false
 LOCAL_SRC_FILES := flash_image.c
 LOCAL_MODULE := utility_flash_image
 LOCAL_MODULE_TAGS := optional
@@ -65,6 +68,7 @@ LOCAL_FORCE_STATIC_EXECUTABLE := true
 include $(BUILD_EXECUTABLE)
 
 include $(CLEAR_VARS)
+LOCAL_PACK_MODULE_RELOCATIONS := false
 LOCAL_SRC_FILES := erase_image.c
 LOCAL_MODULE := utility_erase_image
 LOCAL_MODULE_TAGS := optional
